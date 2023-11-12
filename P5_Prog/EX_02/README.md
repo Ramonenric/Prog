@@ -1,0 +1,7 @@
+RuntimeException es una subclase de Exception en Java que representa excepciones que pueden ocurrir durante la ejecución de un programa, pero que no están obligadas a ser declaradas en la cláusula throws del método en el que pueden ocurrir. A diferencia de las excepciones verificadas, como IOException o SQLException, que deben ser manejadas o declaradas, las excepciones de tipo RuntimeException y sus subclases son excepciones no verificadas.
+
+Lo que hace especial a RuntimeException y sus subclases es que el compilador de Java no obliga a los programadores a capturar o declarar estas excepciones. Esto significa que las excepciones de tipo RuntimeException pueden propagarse a través de los métodos sin necesidad de ser gestionadas explícitamente.
+
+Algunas de las subclases comunes de RuntimeException incluyen NullPointerException, ArrayIndexOutOfBoundsException, ArithmeticException, IllegalArgumentException, entre otras. Estas excepciones suelen indicar errores en la lógica del programa o problemas que podrían haberse evitado mediante una programación más cuidadosa.
+
+En resumen, las excepciones de tipo RuntimeException son especiales porque no requieren que el programador las capture o las declare, lo que puede hacer que el código sea más conciso, pero también significa que los errores relacionados con estas excepciones pueden ser más difíciles de detectar y corregir durante el desarrollo.
